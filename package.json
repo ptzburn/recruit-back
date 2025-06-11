@@ -1,0 +1,43 @@
+{
+  "name": "firstagent",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev src/app.ts",
+    "lint": "eslint .",
+    "seed": "npx ts-node src/database/seed-database.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "eslint": "^9.28.0",
+    "prettier": "3.5.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^0.3.21",
+    "@langchain/langgraph": "^0.3.0",
+    "@langchain/langgraph-checkpoint-mongodb": "^0.0.6",
+    "@langchain/mongodb": "^0.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "langchain": "^0.3.27",
+    "mongodb": "6.16.0",
+    "mongoose": "^8.15.1",
+    "zod": "^3.25.55"
+  },
+  "resolutions": {
+    "mongodb": "6.16.0"
+  }
+}
