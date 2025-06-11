@@ -2,10 +2,12 @@ import express, { Express } from "express";
 import { PORT } from "../config/env";
 import connectToDatabase from "./database/mongodb";
 import chatRouter from "./routes/chats";
+import cors from "cors";
 
 const app: Express = express();
 
 app.use(express.json());
+app.use(cors());
 app.use("/api/chat", chatRouter);
 
 app.get("/api", (_req, res) => {
